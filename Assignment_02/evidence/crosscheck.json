@@ -1,0 +1,45 @@
+{
+  "validation": "Independent Python csv/statistics implementation checked against R output; not claimed student manual verification",
+  "checks": [
+    {
+      "symbol": "AAPL",
+      "observations": 61,
+      "independent_results": {
+        "Mean": 179.62819509037206,
+        "Median": 180.523345947266,
+        "SampleSD": 7.241792677184588,
+        "LatestSMA": 169.5474212646484
+      },
+      "mode_frequency_verified": true,
+      "all_rolling_windows_verified": true,
+      "status": "passed"
+    },
+    {
+      "symbol": "MSFT",
+      "observations": 61,
+      "independent_results": {
+        "Mean": 395.97547237208636,
+        "Median": 398.029144287109,
+        "SampleSD": 15.015955256046903,
+        "LatestSMA": 414.202490234375
+      },
+      "mode_frequency_verified": true,
+      "all_rolling_windows_verified": true,
+      "status": "passed"
+    },
+    {
+      "symbol": "GOOGL",
+      "observations": 61,
+      "independent_results": {
+        "Mean": 141.70599715436092,
+        "Median": 141.305419921875,
+        "SampleSD": 5.3453643197939575,
+        "LatestSMA": 149.2418609619142
+      },
+      "mode_frequency_verified": true,
+      "all_rolling_windows_verified": true,
+      "status": "passed"
+    }
+  ],
+  "timestamp_utc": "2026-11-24T20:00:47.213301+00:00"
+}

@@ -1,0 +1,4 @@
+"Symbol","Observations","MissingAdjustedRows","FirstDate","LastDate","Mean","Median","Mode","ModeFrequency","SampleSD","SMAWindow","LatestSMA"
+"AAPL",61,0,"2024-01-02","2024-03-28",179.628195090372,180.523345947266,"No unique mode: all values occur once",1,7.24179267718459,5,169.547421264648
+"MSFT",61,0,"2024-01-02","2024-03-28",395.975472372086,398.029144287109,"No unique mode: all values occur once",1,15.0159552560469,5,414.202490234375
+"GOOGL",61,0,"2024-01-02","2024-03-28",141.705997154361,141.305419921875,"No unique mode: all values occur once",1,5.34536431979396,5,149.241860961914

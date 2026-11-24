@@ -1,0 +1,7 @@
+Package: rstudio-server
+Version: 2026.11.0+203
+Architecture: amd64
+
+Local SHA256: d765be151b22fe84c435ee2f47c24c3a489edc86a2751e257cb9fb7def6c9636
+Source: https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.11.0-203-amd64.deb
+Package extracted into a user-owned managed workspace; not installed on the student PC.

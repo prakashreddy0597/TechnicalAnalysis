@@ -1,0 +1,160 @@
+File	Edit	Code	View	Plots	Session	Build	Debug	Profile	Tools	Help
+	
+	
+agent
+	
+	
+			
+		
+			
+		
+			
+		
+			
+		
+			
+	
+			
+		
+			
+	
+			
+		
+			
+		
+Filter by file or function name
+		
+			
+	
+	
+Addins
+		
+		
+			
+	
+	
+	
+Posit Assistant
+		
+			
+	
+Project: (None)
+		
+Console cleared
+Environment
+History
+Connections
+Tutorial
+			
+	
+			
+		
+	
+Import Dataset
+		
+		
+	
+635 MiB
+		
+		
+			
+	
+	
+List
+		
+		
+			
+	
+			
+	
+R
+		
+		
+	
+Global Environment
+		
+	
+Search environment
+			
+Data
+	results	
+	List of  3
+	s	
+	61 obs. of 8 variables
+	stocks	
+	List of  3
+	summary_table	
+	3 obs. of 12 variables
+Values
+	missing	
+	character (empty)
+	package	
+	"TTR"
+	required	
+	chr [1:2] "quantmod" "TTR"
+Functions
+	calculate_statistics	
+	function (stock_frame, symbol, window = 5L)
+	display_stock_data	
+	function (stock_frames, results, rows = 5L)
+	load_stock_data	
+	function (portfolio_file = "portfolio.txt", start_date = "2024-01-01", end_date = "2024-03-31", source = c("yahoo", "cache"), data_dir = "data")
+	plot_stock_data	
+	function (results, output_dir = "outputs")
+Files
+Plots
+Packages
+Help
+Viewer
+Presentation
+			
+	
+			
+		
+	
+Zoom
+		
+		
+	
+Fit to Pane
+		
+		
+	
+Export
+		
+		
+			
+		
+			
+	
+	
+Publish
+		
+	
+			
+		
+			
+	
+	R 4.4.3·/workspace/TechnicalAnalysis/Assignment_02/
+Console
+Terminal
+	
+Background Jobs
+	
+	
+	R 4.4.3	·	/workspace/TechnicalAnalysis/Assignment_02/	
+			
+	
+				
+			
+	
+			
+> s <- results$AAPL$series; plot(s$Date,s$Adjusted,type="l",col="#174D68",lwd=2,xlab="Trading date",ylab="Adjusted close (USD)",main="AAPL: adjusted close and 5-session SMA"); lines(s$Date,s$SMA5,col="#C76B14",lwd=2); legend("topright",c("Adjusted close","5-session SMA"),col=c("#174D68","#C76B14"),lty=1,lwd=2,bty="n"); cat("\nCHART_CONFIRMED\n")
+
+CHART_CONFIRMED
+
+
+
+
+> 
+	

@@ -1,0 +1,94 @@
+
+=== AAPL: imported OHLCV data ===
+       Date   Open   High    Low  Close   Volume Adjusted
+ 2024-01-02 187.15 188.44 183.89 185.64 82488700 183.2648
+ 2024-01-03 184.22 185.88 183.43 184.25 58414500 181.8925
+ 2024-01-04 182.15 183.09 180.88 181.91 71983600 179.5825
+ 2024-01-05 181.99 182.76 180.17 181.18 62379700 178.8618
+ 2024-01-08 182.09 185.60 181.50 185.56 59144500 183.1858
+Rows: 61 
+Summary based on adjusted closing price (USD):
+ Symbol Observations MissingAdjustedRows  FirstDate   LastDate     Mean
+   AAPL           61                   0 2024-01-02 2024-03-28 179.6282
+   Median                                  Mode ModeFrequency SampleSD
+ 180.5233 No unique mode: all values occur once             1 7.241793
+ SMAWindow LatestSMA
+         5  169.5474
+Trailing SMA observations (last rows):
+       Date Adjusted     SMA5
+ 2024-03-22 170.2927 172.4120
+ 2024-03-25 168.8792 171.8446
+ 2024-03-26 167.7523 170.5853
+ 2024-03-27 171.3108 169.5257
+ 2024-03-28 169.5020 169.5474
+
+=== MSFT: imported OHLCV data ===
+       Date   Open   High    Low  Close   Volume Adjusted
+ 2024-01-02 373.86 375.90 366.77 370.87 25258600 362.4178
+ 2024-01-03 369.01 373.26 368.51 370.60 23083500 362.1540
+ 2024-01-04 370.67 373.10 367.17 367.94 20901500 359.5546
+ 2024-01-05 368.97 372.06 366.50 367.75 21004600 359.3690
+ 2024-01-08 369.30 375.20 369.01 374.69 23134000 366.1508
+Rows: 61 
+Summary based on adjusted closing price (USD):
+ Symbol Observations MissingAdjustedRows  FirstDate   LastDate     Mean
+   MSFT           61                   0 2024-01-02 2024-03-28 395.9755
+   Median                                  Mode ModeFrequency SampleSD
+ 398.0291 No unique mode: all values occur once             1 15.01596
+ SMAWindow LatestSMA
+         5  414.2025
+Trailing SMA observations (last rows):
+       Date Adjusted     SMA5
+ 2024-03-22 419.7437 415.5085
+ 2024-03-25 413.9871 416.5933
+ 2024-03-26 412.8025 416.6403
+ 2024-03-27 412.5871 415.8962
+ 2024-03-28 411.8920 414.2025
+
+=== GOOGL: imported OHLCV data ===
+       Date   Open   High    Low  Close   Volume Adjusted
+ 2024-01-02 138.55 139.45 136.48 138.17 23711200 136.8676
+ 2024-01-03 137.25 139.63 137.08 138.92 24212100 137.6106
+ 2024-01-04 138.42 139.16 136.35 136.39 27137700 135.1044
+ 2024-01-05 136.75 137.16 135.15 135.73 22513900 134.4506
+ 2024-01-08 136.29 139.01 136.26 138.84 21404000 137.5313
+Rows: 61 
+Summary based on adjusted closing price (USD):
+ Symbol Observations MissingAdjustedRows  FirstDate   LastDate    Mean   Median
+  GOOGL           61                   0 2024-01-02 2024-03-28 141.706 141.3054
+                                  Mode ModeFrequency SampleSD SMAWindow
+ No unique mode: all values occur once             1 5.345364         5
+ LatestSMA
+  149.2419
+Trailing SMA observations (last rows):
+       Date Adjusted     SMA5
+ 2024-03-22 149.3489 146.9655
+ 2024-03-25 148.6555 147.4390
+ 2024-03-26 149.2498 148.1602
+ 2024-03-27 149.4479 148.5821
+ 2024-03-28 149.5073 149.2419
+
+=== Combined statistics ===
+ Symbol Observations MissingAdjustedRows  FirstDate   LastDate     Mean
+   AAPL           61                   0 2024-01-02 2024-03-28 179.6282
+   MSFT           61                   0 2024-01-02 2024-03-28 395.9755
+  GOOGL           61                   0 2024-01-02 2024-03-28 141.7060
+   Median                                  Mode ModeFrequency  SampleSD
+ 180.5233 No unique mode: all values occur once             1  7.241793
+ 398.0291 No unique mode: all values occur once             1 15.015955
+ 141.3054 No unique mode: all values occur once             1  5.345364
+ SMAWindow LatestSMA
+         5  169.5474
+         5  414.2025
+         5  149.2419
+
+=== Software versions ===
+R version 4.4.3 (2025-02-28) 
+quantmod 0.4.29 
+TTR 0.24.4 
+xts 0.14.3 
+zoo 1.9.1 
+curl 8.2.0 
+Source: cache | requested period: 2024-01-01 to 2024-03-31 inclusive
+
+R diagnostics:

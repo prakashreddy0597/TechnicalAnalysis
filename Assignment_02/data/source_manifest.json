@@ -1,0 +1,29 @@
+{
+  "provider": "Yahoo Finance through quantmod::getSymbols(src=\"yahoo\")",
+  "requested_start_inclusive": "2024-01-01",
+  "requested_end_inclusive": "2024-03-31",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "GOOGL"
+  ],
+  "price_column_for_statistics": "Adjusted",
+  "currency": "USD",
+  "files": [
+    {
+      "symbol": "AAPL",
+      "sha256": "4ad16a41ffcf087e3c8b719463cc68eecfb1a5e63f7a110afd5088fcb84a3c28",
+      "snapshot_file_mtime_utc": "2026-11-24T19:54:32.037463+00:00"
+    },
+    {
+      "symbol": "MSFT",
+      "sha256": "419859f21b40df0a1354c2fecb9fc4117f43f17e5c860d31b5075ec3a18d552f",
+      "snapshot_file_mtime_utc": "2026-11-24T19:54:32.193468+00:00"
+    },
+    {
+      "symbol": "GOOGL",
+      "sha256": "ff68db1fbbfdfc6851385b86f98c9b1ad0a35c2535f3aad81cc9b35a24c873b9",
+      "snapshot_file_mtime_utc": "2026-11-24T19:54:32.420692+00:00"
+    }
+  ]
+}

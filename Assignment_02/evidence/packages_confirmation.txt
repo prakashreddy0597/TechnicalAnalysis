@@ -1,0 +1,8 @@
+quantmod 0.4.29 
+TTR 0.24.4 
+R version 4.4.3 (2025-02-28) 
+
+R diagnostics:
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 

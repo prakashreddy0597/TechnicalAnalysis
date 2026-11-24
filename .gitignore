@@ -1,0 +1,6 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.DS_Store
+Assignment_02/outputs/analysis.rds

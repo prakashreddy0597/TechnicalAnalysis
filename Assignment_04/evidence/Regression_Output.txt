@@ -1,0 +1,4 @@
+AI-generated and assistant-executed R verification, not student manual checking.
+PASS: real-input reconciliation, duplicate/conflict separation, all eight customers retained,
+price-screen interpretation, idempotent business values, synthetic label normalization,
+normalized duplicate handling, missing-customer quarantine and multiplier validation.

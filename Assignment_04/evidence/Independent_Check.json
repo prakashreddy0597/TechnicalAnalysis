@@ -1,0 +1,32 @@
+{
+  "validation": "Independent Python row-level and quantile cross-check; not student manual verification",
+  "input_records": 610,
+  "exact_duplicate_copies": 9,
+  "canonical_records": 601,
+  "conflicting_order_ids": [
+    265
+  ],
+  "eligible_for_fences": 396,
+  "disposition_counts": {
+    "duplicate_record": 9,
+    "retained": 378,
+    "missing_quantity": 88,
+    "missing_product": 48,
+    "nonpositive_or_invalid_quantity": 67,
+    "quantity_outlier_review": 18,
+    "conflicting_order_id": 2
+  },
+  "all_610_dispositions_match_R": true,
+  "fences": {
+    "Quantity": [
+      -70.0,
+      105.0
+    ],
+    "Price": [
+      -106.51500000000001,
+      314.44500000000005
+    ]
+  },
+  "clean_rows": 378,
+  "input_sha256": "048a27066b3631a4d488a6beb52e9c21bd45fe0ee96ecd6677f24e09a1e57342"
+}

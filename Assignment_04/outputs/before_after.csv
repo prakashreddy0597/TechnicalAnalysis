@@ -1,0 +1,7 @@
+"Metric","Before","After"
+"Rows",610,378
+"Missing Product",49,0
+"Missing Quantity",95,0
+"Missing Customer",0,0
+"Exact duplicate copies",9,0
+"Repeated OrderID copies",10,0

@@ -11,7 +11,7 @@ Course repository for the preliminary technical-analysis workflow and later stag
 
 - [Assignment 3](Assignment_03/README.md): prompt-refined R outlier function, synthetic tests, debugging evidence and reflection.
 
-Assignment 4 can be added in its own folder when completed.
+- [Assignment 4](Assignment_04/README.md): schema-aware sales cleaning with dplyr, audited exclusions, before/after output and disclosed reflection draft.
 
 ## AI disclosure
 

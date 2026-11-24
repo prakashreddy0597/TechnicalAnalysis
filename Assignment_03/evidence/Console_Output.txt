@@ -1,0 +1,69 @@
+AI Assistance Declaration: ChatGPT generated and executed these synthetic R tests on 24 November 2026. Tool model/version not exposed. Prompts: Appendix_AI.md. No student manual or Sheets verification is claimed. All final calculations are done by myself. I am responsible for the accuracy and originality of this work. Clarification: this log records assistant-executed calculations.
+
+VERSION 1: observed missing-value error
+Observed error: missing values and NaN's not allowed if 'na.rm' is FALSE 
+
+VERSION 2: differing quartile convention, not a calculation mistake
+Input: 0 1 2 3 4 8 
+V2 retained: 0 1 2 3 4 
+boxplot.stats outliers:  
+Final retained: 0 1 2 3 4 8 
+
+FINAL: comparisons with boxplot.stats for supported inputs
+obvious PASS | clean: 10, 15, 20, 25 | outliers: 999 | missing: 0 
+missing PASS | clean: 10, 15, 20, 25 | outliers: 999 | missing: 2 
+no_outliers PASS | clean: 10, 12, 14, 16, 18 | outliers:  | missing: 0 
+hinge_difference PASS | clean: 0, 1, 2, 3, 4, 8 | outliers:  | missing: 0 
+negative_outlier PASS | clean: 10, 12, 14, 16, 18, 20 | outliers: -999 | missing: 0 
+constant PASS | clean: 5, 5, 5, 5, 5, 5 | outliers:  | missing: 0 
+zero_iqr_outlier PASS | clean: 5, 5, 5, 5 | outliers: 100 | missing: 0 
+boundaries PASS | clean: -3, 0, 0, 1, 1, 2, 2, 5 | outliers:  | missing: 0 
+one_value PASS | clean: 42 | outliers:  | missing: 0 
+empty PASS | clean:  | outliers:  | missing: 0 
+all_missing PASS | clean:  | outliers:  | missing: 2 
+named_order PASS | clean: 20, 10, 25, 15 | outliers: 999 | missing: 0 
+Explicit expected values, boundary inclusion, positions and integer type: PASS
+
+FINAL: invalid input / deliberate policy rejections
+character PASS | expected error: x must be a plain real numeric vector. 
+logical PASS | expected error: x must be a plain real numeric vector. 
+matrix PASS | expected error: x must be a plain real numeric vector. 
+factor PASS | expected error: x must be a plain real numeric vector. 
+complex PASS | expected error: x must be a plain real numeric vector. 
+null PASS | expected error: x must be a plain real numeric vector. 
+infinity PASS | expected error: x must not contain infinite values. 
+coefficient_zero PASS | expected error: coef must be one finite positive number. 
+coefficient_missing PASS | expected error: coef must be one finite positive number. 
+coefficient_vector PASS | expected error: coef must be one finite positive number. 
+coefficient_complex PASS | expected error: coef must be one finite positive number. 
+invalid_na_policy PASS | expected error: na.rm must be TRUE or FALSE. 
+missing_forbidden PASS | expected error: Missing values present; set na.rm = TRUE to omit them. 
+overflow PASS | expected error: Non-finite fences; rescale x or reduce coef. 
+Custom positive coefficient comparison: PASS
+
+R session:
+R version 4.4.3 (2025-02-28)
+Platform: x86_64-conda-linux-gnu
+Running under: Debian GNU/Linux 13 (trixie)
+
+Matrix products: default
+BLAS/LAPACK: /workspace/r_env/lib/libopenblasp-r0.3.34.so;  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: Etc/UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.4.3
+
+All assertions completed successfully.
+
+Diagnostics:

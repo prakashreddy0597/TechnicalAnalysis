@@ -1,0 +1,77 @@
+Source line,R code,Explanation
+22,remove_outliers_v1 <- function(x) {,Define the initial function.
+23,"q <- stats::quantile(x, c(0.25, 0.75))",Calculate default type-7 quartiles.
+24,spread <- q[2L] - q[1L],Calculate the interquartile span.
+25,lower <- q[1L] - 1.5 * spread,Construct the lower fence.
+26,upper <- q[2L] + 1.5 * spread,Construct the upper fence.
+27,x[x >= lower & x <= upper],Keep values inside inclusive fences.
+28,},Finish the initial function.
+31,remove_outliers_v2 <- function(x) {,Define an intermediate refinement.
+32,if (!is.numeric(x) || is.complex(x) || !is.null(dim(x))) {,Require a real numeric vector.
+33,"stop(""x must be a real numeric vector."")",Explain an invalid argument.
+34,},Finish input-type validation.
+35,x <- x[!is.na(x)],Drop missing NA/NaN entries.
+36,if (any(!is.finite(x))) {,Detect unsupported infinite values.
+37,"stop(""x must not contain infinite values."")",Reject infinities rather than ignore them.
+38,},Finish the infinity guard.
+39,if (!length(x)) return(x),Handle empty/all-missing input.
+40,"q <- stats::quantile(x, c(0.25, 0.75), names = FALSE)",Retain default type-7 quartiles.
+41,spread <- q[2L] - q[1L],Calculate the quartile span once.
+42,x[x >= q[1L] - 1.5 * spread & x <= q[2L] + 1.5 * spread],Filter while retaining order.
+43,},Finish the intermediate version.
+46,"remove_outliers <- function(x, coef = 1.5, na.rm = TRUE) {",Define inputs and documented defaults.
+47,if (!is.numeric(x) || is.complex(x) || is.object(x) || !is.null(dim(x))) {,Reject unsupported types/classes.
+48,"stop(""x must be a plain real numeric vector."", call. = FALSE)",Give a readable type error.
+49,},Complete vector validation.
+50,if (!is.numeric(coef) || is.complex(coef) || is.object(coef) || length(coef) != 1L) {,Validate coefficient type/size.
+51,"stop(""coef must be one finite positive number."", call. = FALSE)",Reject malformed coefficients.
+52,},Finish coefficient type validation.
+53,if (is.na(coef) || !is.finite(coef) || coef <= 0) {,Require a finite strictly positive coefficient.
+54,"stop(""coef must be one finite positive number."", call. = FALSE)",Explain the coefficient policy.
+55,},Finish coefficient range validation.
+56,if (!is.logical(na.rm) || length(na.rm) != 1L || is.na(na.rm)) {,Require a scalar logical missing policy.
+57,"stop(""na.rm must be TRUE or FALSE."", call. = FALSE)",Reject ambiguous missing-value settings.
+58,},Finish missing-policy validation.
+59,missing <- is.na(x),Mark both NA and NaN values.
+60,if (any(missing) && !na.rm) {,Honor a caller who forbids omission.
+61,"stop(""Missing values present; set na.rm = TRUE to omit them."", call. = FALSE)",Fail explicitly.
+62,},Finish the missing-value policy check.
+63,if (any(is.infinite(x))) {,Detect either sign of infinity.
+64,"stop(""x must not contain infinite values."", call. = FALSE)",Keep supported inputs finite.
+65,},Finish the infinity guard.
+66,valid_positions <- unname(which(!missing)),Retain original integer indices without inherited labels.
+67,values <- x[valid_positions],Select usable values without sorting the output.
+68,"hinges <- c(NA_real_, NA_real_)",Define an empty-input summary consistently.
+69,lower <- NA_real_,Leave an undefined lower fence for no data.
+70,upper <- NA_real_,Leave an undefined upper fence for no data.
+71,keep <- logical(length(values)),Allocate a mask of the appropriate length.
+72,if (length(values)) {,Compute fences only when observations exist.
+73,"five <- stats::fivenum(values, na.rm = FALSE)",Obtain Tukey's five-number summary.
+74,"hinges <- unname(five[c(2L, 4L)])",Extract lower and upper hinges.
+75,spread <- hinges[2L] - hinges[1L],Calculate the hinge-based IQR.
+76,lower <- hinges[1L] - coef * spread,Compute the lower inclusive boundary.
+77,upper <- hinges[2L] + coef * spread,Compute the upper inclusive boundary.
+78,"if (any(!is.finite(c(spread, lower, upper)))) {",Detect floating-point overflow.
+79,"stop(""Non-finite fences; rescale x or reduce coef."", call. = FALSE)",Avoid silent overflow decisions.
+80,},Finish the numerical-range guard.
+81,keep <- values >= lower & values <= upper,Keep exact-boundary observations.
+82,},Finish fence construction and filtering.
+83,kept_positions <- valid_positions[keep],Map retained values to original indices.
+84,outlier_positions <- valid_positions[!keep],Map excluded outliers separately from missing values.
+85,list(,"Return a structured, auditable result."
+86,"clean = x[kept_positions],",Preserve the retained values' order and names.
+87,"removed = x[outlier_positions],","Preserve excluded outliers, including duplicates."
+88,"kept_positions = kept_positions,",Report retained original positions.
+89,"outlier_positions = outlier_positions,",Report outlier original positions.
+90,"missing_positions = unname(which(missing)),",Report plain integer indices of missing entries.
+91,"lower_hinge = hinges[1L],",Make the lower hinge inspectable.
+92,"upper_hinge = hinges[2L],",Make the upper hinge inspectable.
+93,"lower_fence = lower,",Expose the lower decision boundary.
+94,"upper_fence = upper,",Expose the upper decision boundary.
+95,"n_input = length(x),",Report the original vector size.
+96,"n_missing = sum(missing),",Count omitted missing entries.
+97,"n_outliers = length(outlier_positions),",Count outliers without mixing in missing entries.
+98,"coef = coef,",Record the coefficient actually used.
+99,"method = ""Tukey hinges; inclusive fences""",Record the statistical convention.
+100,),Finish the result object.
+101,},Finish the final function.

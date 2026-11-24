@@ -9,7 +9,9 @@ Course repository for the preliminary technical-analysis workflow and later stag
 - [Assignment 1](Assignment_01/README.md): snapshot of the Markdown Buddy project. The original published repository remains [markdown-buddy-bhanu-rachamalla](https://github.com/prakashreddy0597/markdown-buddy-bhanu-rachamalla).
 - [Assignment 2](Assignment_02/README.md): historical stock imports, descriptive statistics and price/SMA charts.
 
-Assignments 3 and 4 can be added in separate folders when completed.
+- [Assignment 3](Assignment_03/README.md): prompt-refined R outlier function, synthetic tests, debugging evidence and reflection.
+
+Assignment 4 can be added in its own folder when completed.
 
 ## AI disclosure
 

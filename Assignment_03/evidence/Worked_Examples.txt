@@ -1,0 +1,7 @@
+AI-generated expected examples verified by assistant-executed R; not a student hand calculation.
+lower_hinge upper_hinge lower_fence upper_fence 
+         15          25           0          40 
+[1] 10 15 20 25
+lower_hinge upper_hinge lower_fence upper_fence 
+        1.0         4.0        -3.5         8.5 
+[1] 0 1 2 3 4 8

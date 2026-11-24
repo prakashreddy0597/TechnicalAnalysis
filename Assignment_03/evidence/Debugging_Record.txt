@@ -1,0 +1,19 @@
+AI Assistance Declaration: ChatGPT (model/version not exposed), 24 November 2026, documented actual assistant-executed R debugging for the supplied Assignment 3 brief. This is not a student manual review or an AI-chat screenshot. No independent student verification is claimed.
+
+Observed missing-value failure in version 1:
+missing values and NaN's not allowed if 'na.rm' is FALSE
+
+Observed convention difference in version 2, input c(0, 1, 2, 3, 4, 8):
+V2 retained: 0 1 2 3 4
+boxplot.stats outliers: none
+Final retained: 0 1 2 3 4 8
+Interpretation: type-7 quartiles differ from Tukey hinges for this sample. This is a specification/benchmark mismatch, not proof that either convention is universally wrong.
+
+Actual first final-version test run stopped at this assertion:
+Error: identical(remove_outliers(cases$named_order)$outlier_positions,  .... is not TRUE
+
+Diagnosis: which() inherited names from a named input vector. The outlier index had the correct numerical value but retained an unwanted name, so the strict identical() expectation failed.
+
+Implemented correction: apply unname() to position-vector construction. Retained and removed data values continue preserving their original names; audit positions are plain integers. This correction was made by the assistant, not represented as a student edit.
+
+See Console_Output.txt for the final rerun and test_summary.csv for outcomes.

@@ -1,0 +1,74 @@
+Historical snapshots: 2024-01-02 through 2024-03-28; 61 sessions per symbol.
+ Symbol Rows       Date  Close    SMA20    EMA12      MACD    Signal RSI_spec14
+   AAPL   61 2024-03-28 171.48 172.6965 172.7779 -2.395075 -2.692102   42.62277
+   MSFT   61 2024-03-28 420.72 416.7895 420.6928  4.547924  4.670215   55.75605
+  GOOGL   61 2024-03-28 150.93 142.4475 147.4287  2.822400  1.642371   64.98044
+ RSI_Wilder14 PopulationSD RegressionSlope RegressionIntercept RegressionPoints
+     42.59234     7.352199      -0.1465325            174.6919               21
+     55.74096    15.007135       0.9255059            406.4590               21
+     64.94486     5.351814       1.0287011            130.9419               21
+ WeeklyRows
+         13
+         13
+         13
+
+Latest screen: Close>SMA20; RSI Wilder in [30,70]; MACD>signal
+ Symbol Rows       Date  Close    SMA20    EMA12   MACD   Signal RSI_spec14
+  GOOGL   61 2024-03-28 150.93 142.4475 147.4287 2.8224 1.642371   64.98044
+ RSI_Wilder14 PopulationSD RegressionSlope RegressionIntercept RegressionPoints
+     64.94486     5.351814        1.028701            130.9419               21
+ WeeklyRows
+         13
+
+Signal candidates (not a position-aware backtest):
+       Date Symbol  Close RSI_Wilder14 SMA_rule MACD_rule NextSessionDate
+ 2024-02-02   AAPL 185.85     46.46556     SELL      HOLD      2024-02-05
+ 2024-03-18   AAPL 173.72     40.61598     HOLD       BUY      2024-03-19
+ 2024-02-20   MSFT 402.79     53.30451     SELL      HOLD      2024-02-21
+ 2024-02-28   MSFT 407.72     56.11322      BUY      HOLD      2024-02-29
+ 2024-03-07   MSFT 409.14     54.26284     SELL      HOLD      2024-03-08
+ 2024-03-13   MSFT 415.10     58.72791      BUY      HOLD      2024-03-14
+ 2024-03-14   MSFT 425.22     65.66603     HOLD       BUY      2024-03-15
+ 2024-03-28   MSFT 420.72     55.74096     HOLD      SELL            <NA>
+ 2024-02-05  GOOGL 143.68     52.18084     SELL      HOLD      2024-02-06
+ 2024-02-12  GOOGL 147.53     57.98349      BUY      HOLD      2024-02-13
+ 2024-02-15  GOOGL 142.77     47.55646     SELL      HOLD      2024-02-16
+ 2024-03-13  GOOGL 139.79     51.47954     HOLD       BUY      2024-03-14
+ 2024-03-14  GOOGL 143.10     57.41516      BUY      HOLD      2024-03-15
+ NextOpen
+   188.15
+   174.34
+   400.17
+   408.64
+   407.96
+   420.24
+   419.29
+       NA
+   144.65
+   144.92
+   142.99
+   141.19
+   142.50
+
+Runtime:
+R version 4.4.3 (2025-02-28)
+Platform: x86_64-conda-linux-gnu
+Running under: Debian GNU/Linux 13 (trixie)
+
+Matrix products: default
+BLAS/LAPACK: /workspace/r_env/lib/libopenblasp-r0.3.34.so;  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: Etc/UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.4.3

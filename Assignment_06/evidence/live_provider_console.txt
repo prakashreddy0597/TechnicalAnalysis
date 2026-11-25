@@ -1,0 +1,19 @@
+Loading required package: xts
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Loading required package: TTR
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+
+Provider: Yahoo Finance (live) 
+Actual source: Yahoo Finance (live) Rows including buffer: 472 Range: 2022-05-12 2024-03-28 
+
+Provider: Stooq (live) 
+ERROR: more columns than column names 

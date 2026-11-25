@@ -1,0 +1,66 @@
+"Test","Passed"
+"SMA supplied example",TRUE
+"SMA period one",TRUE
+"SMA entire window",TRUE
+"SMA short input error",TRUE
+"SMA missing-window propagation",TRUE
+"EMA known recurrence",TRUE
+"EMA period one",TRUE
+"EMA empty vector",TRUE
+"EMA period exceeds n",TRUE
+"MACD independently known values",TRUE
+"MACD exact return names",TRUE
+"MACD constant zero",TRUE
+"Population SD known",TRUE
+"Population vs sample reference",TRUE
+"SD single and constant",TRUE
+"SD empty input error",TRUE
+"Regression coefficients",TRUE
+"Literal regression window has L+1 points",TRUE
+"Regression independent lm reference",TRUE
+"Regression invalid length",TRUE
+"Regression invalid offset",TRUE
+"Regression reversed indices rejected",TRUE
+"Regression singleton rejected",TRUE
+"RSI literal seed-update convention",TRUE
+"RSI Wilder correct initial seed",TRUE
+"RSI up-only",TRUE
+"RSI down-only",TRUE
+"RSI flat convention",TRUE
+"RSI insufficient changes",TRUE
+"RSI warmup length",TRUE
+"Supplied short StochRSI example stays NA",TRUE
+"StochRSI global normalization reference",TRUE
+"StochRSI compact lengths",TRUE
+"StochRSI bounds",TRUE
+"StochRSI flat range remains undefined",TRUE
+"Crossover literal strings and equality",TRUE
+"Crossunder literal strings",TRUE
+"Logical crossover adapter",TRUE
+"Cross missing comparisons no event",TRUE
+"Cross empty vectors",TRUE
+"Cross mismatched lengths rejected",TRUE
+"Invalid period 0",TRUE
+"Invalid period -1",TRUE
+"Invalid period 1.5",TRUE
+"Invalid period NA",TRUE
+"Invalid period Inf",TRUE
+"Invalid period 3",TRUE
+"Nonnumeric rejected f",TRUE
+"Nonnumeric rejected f",TRUE
+"Nonnumeric rejected f",TRUE
+"Infinite values rejected",TRUE
+"Missing prices rejected by RSI",TRUE
+"EMA causal prefix",TRUE
+"Wilder RSI causal prefix",TRUE
+"Rolling StochRSI causal prefix",TRUE
+"Global StochRSI future dependence demonstrated",TRUE
+"Standalone script sma",TRUE
+"Standalone script ema",TRUE
+"Standalone script macd",TRUE
+"Standalone script stdev",TRUE
+"Standalone script linreg",TRUE
+"Standalone script rsi",TRUE
+"Standalone script stoch_rsi",TRUE
+"Standalone script crossover",TRUE
+"Standalone script crossunder",TRUE

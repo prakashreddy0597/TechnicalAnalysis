@@ -13,6 +13,10 @@ Course repository for the preliminary technical-analysis workflow and later stag
 
 - [Assignment 4](Assignment_04/README.md): schema-aware sales cleaning with dplyr, audited exclusions, before/after output and disclosed reflection draft.
 
+- [Assignment 5](Assignment_05/README.md): nine standalone base-R technical indicators, specification conventions, stock filters, signal rules and validated outputs.
+
+- [Assignment 6](Assignment_06/README.md): interactive R Shiny charts, live-provider collection, indicator toggles and crossover annotations.
+
 ## AI disclosure
 
 ChatGPT (model/version not exposed) assisted with code, documentation, calculations and evidence preparation on 24 November 2026. The Assignment 2 brief and subsequent user requests are documented in its appendix. Actual executions and remote-workspace screenshots are distinguished from actions on the student's PC. No personal installation or manual verification is fabricated. See each assignment's documentation for its own attribution and limits.

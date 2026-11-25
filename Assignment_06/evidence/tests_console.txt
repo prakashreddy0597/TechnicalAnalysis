@@ -1,0 +1,91 @@
+Loading required package: xts
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Loading required package: TTR
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+PASS Saved Yahoo schema and row count 
+PASS MA known example 
+PASS MA insufficient history 
+PASS EMA known recurrence 
+PASS Wilder RSI correct seed 
+PASS RSI flat convention 
+PASS True crossovers not daily states 
+PASS Equality crossing boundary 
+PASS Missing warmup creates no event 
+PASS Mismatched crossing input rejected 
+PASS Date alignment 
+PASS Final bar cannot execute next open 
+PASS Next-bar open is forward shifted 
+PASS Invalid MA periods rejected 
+PASS Noninteger period rejected 
+PASS Weekly/monthly bar counts 
+PASS Weekly volume conserved 
+PASS Monthly OHLC aggregation 
+PASS Reversed date range rejected 
+PASS Missing symbol cache rejected 
+PASS Unsupported cached dates rejected 
+PASS Invalid OHLC rejected 
+PASS Causal signal prefix 
+PASS Render Candlestick 
+PASS Render Line 
+PASS Render Area 
+PASS Toggle panels  
+PASS Toggle panels Moving Averages 
+PASS Toggle panels RSI 
+PASS Toggle panels MACD 
+Warning messages:
+1: No shared levels found between `names(values)` of the manual scale and the
+data's colour values. 
+2: No shared levels found between `names(values)` of the manual scale and the
+data's colour values. 
+PASS Shiny reactive daily selection 
+PASS Shiny stock switch 
+PASS Shiny timeframe switch 
+PASS Visible date filter preserves earlier warmup 
+PASS Shiny custom strategy 
+PASS Shiny invalid periods handled 
+
+ 36 of 36 checks passed.
+R version 4.4.3 (2025-02-28)
+Platform: x86_64-conda-linux-gnu
+Running under: Debian GNU/Linux 13 (trixie)
+
+Matrix products: default
+BLAS/LAPACK: /workspace/r_env/lib/libopenblasp-r0.3.34.so;  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: Etc/UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] quantmod_0.4.29 TTR_0.24.4      xts_0.14.3      zoo_1.9-1      
+[5] ggplot2_4.0.4   shiny_1.15.0   
+
+loaded via a namespace (and not attached):
+ [1] jsonlite_2.0.0     gtable_0.3.6       dplyr_1.2.1        compiler_4.4.3    
+ [5] promises_1.5.0     tidyselect_1.2.1   Rcpp_1.1.2         jquerylib_0.1.4   
+ [9] later_1.4.8        scales_1.4.0       fastmap_1.2.0      mime_0.13         
+[13] lattice_0.23-1     R6_2.6.1           labeling_0.4.3     generics_0.1.4    
+[17] curl_8.2.0         tibble_3.3.1       bslib_0.12.0       pillar_1.11.1     
+[21] RColorBrewer_1.1-3 rlang_1.3.0        cachem_1.1.0       httpuv_1.6.17     
+[25] sass_0.5.0         S7_1.0.0           otel_0.3.0         memoise_2.0.1     
+[29] cli_3.6.6          withr_3.0.3        magrittr_2.0.5     digest_0.6.39     
+[33] grid_4.4.3         fontawesome_0.5.3  xtable_1.8-8       lifecycle_1.0.5   
+[37] vctrs_0.7.3        glue_1.8.1         farver_2.1.2       tools_4.4.3       
+[41] pkgconfig_2.0.3    htmltools_0.5.9   

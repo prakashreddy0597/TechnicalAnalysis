@@ -1,0 +1,67 @@
+PASS SMA supplied example 
+PASS SMA period one 
+PASS SMA entire window 
+PASS SMA short input error 
+PASS SMA missing-window propagation 
+PASS EMA known recurrence 
+PASS EMA period one 
+PASS EMA empty vector 
+PASS EMA period exceeds n 
+PASS MACD independently known values 
+PASS MACD exact return names 
+PASS MACD constant zero 
+PASS Population SD known 
+PASS Population vs sample reference 
+PASS SD single and constant 
+PASS SD empty input error 
+PASS Regression coefficients 
+PASS Literal regression window has L+1 points 
+PASS Regression independent lm reference 
+PASS Regression invalid length 
+PASS Regression invalid offset 
+PASS Regression reversed indices rejected 
+PASS Regression singleton rejected 
+PASS RSI literal seed-update convention 
+PASS RSI Wilder correct initial seed 
+PASS RSI up-only 
+PASS RSI down-only 
+PASS RSI flat convention 
+PASS RSI insufficient changes 
+PASS RSI warmup length 
+PASS Supplied short StochRSI example stays NA 
+PASS StochRSI global normalization reference 
+PASS StochRSI compact lengths 
+PASS StochRSI bounds 
+PASS StochRSI flat range remains undefined 
+PASS Crossover literal strings and equality 
+PASS Crossunder literal strings 
+PASS Logical crossover adapter 
+PASS Cross missing comparisons no event 
+PASS Cross empty vectors 
+PASS Cross mismatched lengths rejected 
+PASS Invalid period 0 
+PASS Invalid period -1 
+PASS Invalid period 1.5 
+PASS Invalid period NA 
+PASS Invalid period Inf 
+PASS Invalid period 3 
+PASS Nonnumeric rejected f 
+PASS Nonnumeric rejected f 
+PASS Nonnumeric rejected f 
+PASS Infinite values rejected 
+PASS Missing prices rejected by RSI 
+PASS EMA causal prefix 
+PASS Wilder RSI causal prefix 
+PASS Rolling StochRSI causal prefix 
+PASS Global StochRSI future dependence demonstrated 
+PASS Standalone script sma 
+PASS Standalone script ema 
+PASS Standalone script macd 
+PASS Standalone script stdev 
+PASS Standalone script linreg 
+PASS Standalone script rsi 
+PASS Standalone script stoch_rsi 
+PASS Standalone script crossover 
+PASS Standalone script crossunder 
+
+Summary: 65 / 65 passed

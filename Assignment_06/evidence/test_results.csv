@@ -1,0 +1,37 @@
+"Test","Passed"
+"Saved Yahoo schema and row count",TRUE
+"MA known example",TRUE
+"MA insufficient history",TRUE
+"EMA known recurrence",TRUE
+"Wilder RSI correct seed",TRUE
+"RSI flat convention",TRUE
+"True crossovers not daily states",TRUE
+"Equality crossing boundary",TRUE
+"Missing warmup creates no event",TRUE
+"Mismatched crossing input rejected",TRUE
+"Date alignment",TRUE
+"Final bar cannot execute next open",TRUE
+"Next-bar open is forward shifted",TRUE
+"Invalid MA periods rejected",TRUE
+"Noninteger period rejected",TRUE
+"Weekly/monthly bar counts",TRUE
+"Weekly volume conserved",TRUE
+"Monthly OHLC aggregation",TRUE
+"Reversed date range rejected",TRUE
+"Missing symbol cache rejected",TRUE
+"Unsupported cached dates rejected",TRUE
+"Invalid OHLC rejected",TRUE
+"Causal signal prefix",TRUE
+"Render Candlestick",TRUE
+"Render Line",TRUE
+"Render Area",TRUE
+"Toggle panels ",TRUE
+"Toggle panels Moving Averages",TRUE
+"Toggle panels RSI",TRUE
+"Toggle panels MACD",TRUE
+"Shiny reactive daily selection",TRUE
+"Shiny stock switch",TRUE
+"Shiny timeframe switch",TRUE
+"Visible date filter preserves earlier warmup",TRUE
+"Shiny custom strategy",TRUE
+"Shiny invalid periods handled",TRUE

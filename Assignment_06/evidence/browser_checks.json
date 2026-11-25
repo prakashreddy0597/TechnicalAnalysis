@@ -1,0 +1,13 @@
+{
+  "passed": [
+    "Default saved Yahoo candlestick renders with three panels",
+    "Stock and line-chart selection update",
+    "RSI and MACD independently disabled, moving averages retained",
+    "Weekly area chart aggregates to 13 bars and explains MA warm-up",
+    "Annotations independently toggled off",
+    "Invalid MA periods produce readable validation instead of a crash",
+    "Application recovers after invalid input",
+    "CSV download contains 61 date-aligned rows plus header"
+  ],
+  "javascript_errors": []
+}
